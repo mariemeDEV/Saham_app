@@ -1,0 +1,208 @@
+body{
+    overflow-x:hidden;
+    font-family: 'Times New Roman', Times, serif
+}
+nav .nav-wrapper{
+    padding: 0 45px 10px 60px !important;
+    background:indigo !important
+}
+.brand-logo{
+    margin-left: -47px;
+    background-size:cover;
+    background-repeat:no-repeat
+}
+.imgLogo{
+    width: 131px;
+    height: 40px;
+    margin-top: 12px;
+}
+.burg-menu{
+    margin: 10px 25px 10px -16px;
+}
+/* .main-content{
+} */
+.page-content{
+    height:100%;
+    margin-top:12px
+}
+/* .collection-item{
+    background:#d0c8d7 !important
+} */
+.left-menu{
+    margin-top: -11px;
+}
+.center-content{
+    margin-top: -18px;
+}
+.form-caracteristiques{
+    padding: 20px 20px 20px 20px !important;
+}
+.top-form{
+    width: 95%;
+}
+.card-header{
+    background: #d0c8d7;
+    height: 44px;
+}
+.card-header p{
+    font-weight:bold;
+    color:indigo;
+    padding: 12px 12px 12px 12px;
+}
+.collection-item{
+    font-weight:bold;
+    color:indigo;
+    padding: 12px 12px 12px 12px;
+}
+.type-number{
+    width: 89px !important;
+}
+td{
+    padding: 0 0 0 30px !important;
+}
+th{
+    text-align: center !important;
+}
+.first-col{
+    margin-right: -17px;
+    height: 174px;
+    margin-left: -10px;
+    margin-top: -43px;  
+}
+.second-col{
+    width:95%;
+    margin-top:-43px;
+    height:174px
+}
+input.RC[type="text"]{
+    width:130px
+}
+span::before{
+    border-right: 2px solid indigo !important;
+    border-bottom: 2px solid  indigo !important;
+}
+
+.b1{
+    margin-top:-23px;
+    margin-left: 652px;
+}
+.bs{
+    background: #d0c8d7;
+}
+.br{
+    background:red
+}
+.pack,.montant{
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding:5px
+}
+.card-simul{
+    border: 1px solid #bcb7b7;
+    /* width: 314px; */
+}
+.packs-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.top-content{
+    width: 88%;
+    margin: 30px 62px 14px 91px;
+}
+.center-content{
+    margin-top: -18px;
+    width: 90%;
+    margin-left: 78px;
+}
+.simulation-form{
+    padding: 0 20px 0 20px;
+}
+.pack-title{
+    text-align:center;
+    font-weight:bold;
+    color:#808080 !important;
+}
+#pack-mini,#pack-classique,#pack-liberte{
+    display:none
+}
+.collection-item span{
+    padding-right:7%;
+    color:#808080;
+}
+.collection-item,.material-icons{
+    color:green
+}
+.help{
+    color: blue;
+    cursor:pointer
+}
+.pack{
+    padding: 53px 0 0px 0;
+    font-weight:bold;
+    font-size:20px
+}
+.pack-body p{
+    color: #808080;
+    font-size: 14px;
+    padding-left: 0;
+}
+.btn{
+    background: blue;
+    color: white;
+    margin-right: 5px;
+    font-size: 13px;
+    margin-top: -14px;
+    margin-bottom: 10px;
+    margin-left: 18px;
+}
+/*Tool tip style*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 191px;
+    height: 180px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    /* margin-left: -60px; */
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+/* input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
+    border-bottom: 1px solid indigo !important;
+} */
