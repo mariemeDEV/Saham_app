@@ -1,6 +1,6 @@
 body{
     overflow-x:hidden;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Montserrat', sans-serif;
 }
 nav .nav-wrapper{
     padding: 0 45px 10px 60px !important;
@@ -35,7 +35,7 @@ nav .nav-wrapper{
     margin-top: -18px;
 }
 .form-caracteristiques{
-    padding: 20px 20px 20px 20px !important;
+    padding: 20px !important;
 }
 .top-form{
     width: 95%;
@@ -47,12 +47,12 @@ nav .nav-wrapper{
 .card-header p{
     font-weight:bold;
     color:indigo;
-    padding: 12px 12px 12px 12px;
+    padding: 12px;
 }
 .collection-item{
-    font-weight:bold;
     color:indigo;
-    padding: 12px 12px 12px 12px;
+    padding: 12px;
+    font-size: 13px;
 }
 .type-number{
     width: 89px !important;
@@ -96,6 +96,10 @@ span::before{
     text-align:center;
     font-weight:bold;
     font-size:20px;
+    
+}
+.montant {
+    margin-bottom: 20px !important;
 }
 .buttons{
     display: flex;
@@ -132,14 +136,17 @@ span::before{
     display:none
 }
 .collection-item span{
-    padding-right:7%;
+    padding-right:3%;
     color:#808080;
+}
+.collection .collection-item {
+    padding: 10px 12px !important;
 }
 .collection-item,.material-icons{
     color:green
 }
 .help{
-    color: blue;
+    color: #002e3c;
     cursor:pointer
 }
 .pack{
@@ -203,6 +210,25 @@ span::before{
     opacity: 1;
   }
 
+  .card-header {
+      padding: 10px;
+      background: #f7ba00;
+      color: #06273a;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+  .btn {
+    background: #f7ba00 !important;
+    color: #06273a;
+  }
+
+  .packs {
+      margin-top: 40px;
+  }
+
+  p {
+      margin: 0 !important; 
+  }
 /* input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
     border-bottom: 1px solid indigo !important;
 } */

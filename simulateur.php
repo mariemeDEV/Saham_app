@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -16,7 +16,7 @@
 <!--<div class="tooltip">Hover over me
   <span class="tooltiptext">Tooltip text</span>
 </div>-->
-
+<div class="container-wrap">
     <div class="top-content"><!--begin-top container-->
         <div class="card">
             <div class="card-header">Simulation</div>
@@ -56,7 +56,7 @@
                         <li class="collection-item"><p>Une assistance automobile aide au constat amiable et remorquage gratuit en cas d'accident</p></li>
                         <li class="collection-item"><p>Sans limitation d'âge</p></li>
                         <li class="collection-item"><h6 class="pack-title">Les garanties</h6></li>
-                        <li class="collection-item"><span><i class="material-icons">check_circle</i></span><span>Résponsabilité civile</span><span><div class="material-icons help tooltip">help<span class="tooltiptext">Tooltip text lokijuhygfdfgthyjuiko</span></div></span></li>
+                        <li class="collection-item"><span><i class="material-icons">check_circle</i></span><span>Résponsabilité civile</span><span><div class="material-icons help tooltip">help<span class="tooltiptext"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores soluta illo mollitia sed vero quia dolor ducimus quos? Quaerat nesciunt odit non, ducimus debitis numquam quis sapiente minus commodi?</p></span></div></span></li>
                         <li class="collection-item"><span><i class="material-icons">check_circle</i></span><span>Défense et recours</span><span><i class="material-icons help">help</i></span></li>
                         <li class="collection-item"><span><i class="material-icons">check_circle</i></span><span>Personnes transportées option 3</span><span><i class="material-icons help">help</i></span></li>
                         <li class="collection-item"><span><i class="material-icons">check_circle</i></span><span>Assistance auto avantage</span><span><i class="material-icons help">help</i></span></li>
@@ -124,6 +124,8 @@
 
         </div>
     </div>
+
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
