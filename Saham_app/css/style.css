@@ -1,0 +1,403 @@
+body{
+    overflow-x:hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo{
+    background:url(../images/logo.png) left center no-repeat;
+    height: 66px;
+    margin-bottom: 40px;
+    background-size: contain;
+    margin-top: 20px;
+}
+nav .nav-wrapper{
+    padding: 0 45px 10px 60px !important;
+    background:indigo !important
+}
+.brand-logo{
+    margin-left: -47px;
+    background-size:cover;
+    background-repeat:no-repeat
+}
+.imgLogo{
+    width: 131px;
+    height: 40px;
+    margin-top: 12px;
+}
+.burg-menu{
+    margin: 10px 25px 10px -16px;
+}
+/* .main-content{
+} */
+.page-content{
+    height:100%;
+    margin-top:12px
+}
+/* .collection-item{
+    background:#d0c8d7 !important
+} */
+.left-menu{
+    margin-top: -11px;
+}
+.center-content{
+    margin-top: -18px;
+}
+.form-caracteristiques{
+    padding: 20px !important;
+}
+.top-form{
+    width: 95%;
+}
+.card-header{
+    background: #d0c8d7;
+    height: 44px;
+}
+.card-header p{
+    font-weight:bold;
+    color:indigo;
+    padding: 12px;
+}
+.collection-item{
+    color:indigo;
+    padding: 12px;
+    font-size: 13px;
+}
+.type-number{
+    width: 89px !important;
+}
+tr:not(.datepicker-row) td{
+    padding: 0 0 0 30px !important;
+}
+th{
+    text-align: center !important;
+}
+.first-col{
+    margin-right: -17px;
+    height: 174px;
+    margin-left: -10px;
+    margin-top: -43px;  
+}
+.second-col{
+    width:95%;
+    margin-top:-43px;
+    height:174px
+}
+input.RC[type="text"]{
+    width:130px
+}
+input,select{
+    position: relative;
+    z-index: 10;
+}
+.card-header{ 
+    color: #021e3a !important;
+    font-weight:bold
+}
+.btn {
+    color: #fff !important;
+}
+span::before{
+    border-right: 2px solid indigo !important;
+    border-bottom: 2px solid  indigo !important;
+}
+
+.b1{
+    margin-top:-23px;
+    margin-left: 652px;
+}
+.bs{
+    background: #d0c8d7;
+}
+.br{
+    background:red
+}
+.pack,.montant{
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+    
+}
+.montant {
+    margin-bottom: 20px !important;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding:5px
+}
+.card-simul{
+    /* border: 1px solid #bcb7b7; */
+    /* width: 314px; */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .16) !important;
+}
+.packs-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.top-content{
+    /* width: 88%; */
+    margin: 40px auto;
+}
+.center-content{
+    /* padding: 0 10px; */
+}
+.simulation-form{
+    /* padding: 0 20px 0 20px; */
+}
+.pack-title{
+    text-align:center;
+    font-weight:bold;
+    color:#808080 !important;
+}
+#pack-mini,#pack-classique,#pack-liberte,#pack-confort{
+    display:none
+}
+.v1,.v2{
+    display:none
+}
+.collection-item span{
+    padding-right:2%;
+    color:#666;
+    font-size: 11px;
+}
+.collection .collection-item {
+    padding: 10px 12px !important;
+    text-align: center;
+}
+.collection .collection-item {
+    border: 0 !important;
+}
+.card-simul .collection {
+    border: 0 !important;
+}
+.collection-item,.material-icons{
+    color:#66c71d;
+}
+.collection-item .material-icons {
+    position: relative;
+    top: 4px;
+}
+.center-content .material-icons {
+    font-size: 16px !important;
+}
+.help{
+    color: #002e3c;
+    cursor:pointer;
+}
+.pack{
+    /* padding: 53px 0 0px 0; */
+    font-weight:bold;
+    font-size:20px;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+}
+#pack-mini .pack {
+    background: #002e3c;
+}
+
+#pack-classique .pack {
+    background: #f90322;
+}
+
+#pack-liberte .pack {
+    background: #49a52e;
+}
+
+#pack-confort .pack {
+    background: #0082ca;
+}
+
+
+
+.pack-body p{
+    color: #808080;
+    font-size: 14px;
+    padding-left: 0;
+}
+.btn{
+    background: blue;
+    color: white;
+    margin-right: 5px;
+    font-size: 13px;
+    margin-top: -14px;
+    margin-bottom: 10px;
+    /* margin-left: 18px; */
+}
+/*Tool tip style*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 191px;
+    height: 180px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .card-header {
+      padding: 10px;
+      background: #f7ba00;
+      color: #06273a;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+  .btn {
+    background: #091e38 !important;
+    color: #06273a;
+  }
+
+  .packs {
+      margin-top: 40px;
+  }
+  .prefix{
+      color:#00152e
+  }
+
+  p {
+      margin: 0 !important; 
+  }
+/* input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
+    border-bottom: 1px solid indigo !important;
+} */
+   
+.second{
+    /* background:green; */
+    padding-top:10vh
+}
+.dataTab{
+    padding: 20px !important;
+}
+.datepicker-table-wrapper .datepicker-date-display,.is-selected button{
+    background:#f7ba00 !important;
+    text-align: center;
+    color: #171a27;
+}
+.datepicker-row td {
+    height: 40px;
+    width: 40px;
+}
+.datepicker-table td.is-selected {
+    background: transparent !important;
+}
+.datepicker-table td.is-today, .btn-flat{
+    color:#171a27 !important
+}
+
+.datepicker-date-display{
+    background:#f7ba00 !important
+}
+
+.data-day{
+    background:#f7ba00 !important
+}
+
+.plus{
+    color: #0a213a;
+    font-size: 38px;
+
+}
+.modal .modal-content {
+    padding-right: 24px !important;
+}
+.datepicker-date-display .year-text, .datepicker-date-display {
+    color: rgb(26, 31, 44);
+}
+.totalRow {
+    background: #f7ba00 !important;
+}
+.totalRow td {
+    color: rgb(26, 31, 44) !important;
+    font-weight: bold;
+}
+.data_appended tr td {
+    padding: 10px !important;
+}
+.data_appended tr:nth-child(odd) {
+    background: rgb(247, 247, 247);
+}
+
+.collapsible-header {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.card-body {
+    padding: 11px;
+}
+.highlight thead tr th {
+    text-align: left !important;
+}
+
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #0a213a !important;
+    -webkit-box-shadow: 0 1px 0 0 #0a213a !important;
+    box-shadow: 0 1px 0 0 #0a213a !important;
+}
+input:not([type]):focus:not([readonly]) + label, input[type=text]:not(.browser-default):focus:not([readonly]) + label, input[type=password]:not(.browser-default):focus:not([readonly]) + label, input[type=email]:not(.browser-default):focus:not([readonly]) + label, input[type=url]:not(.browser-default):focus:not([readonly]) + label, input[type=time]:not(.browser-default):focus:not([readonly]) + label, input[type=date]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label, input[type=tel]:not(.browser-default):focus:not([readonly]) + label, input[type=number]:not(.browser-default):focus:not([readonly]) + label, input[type=search]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label,
+.input-field .prefix.active {
+    color: #0a213a !important;
+}
+@media only screen and (min-width: 993px){
+.container {
+    width: 100% !important;
+}
+}
+
+.card-simul {
+    height: 530px;
+    width: 100%;
+}
+.card-body.pack-body {
+    padding: 0 !important;
+}
+
+#contrat_body ul.collapsible label {
+    color: rgb(2, 33, 60) !important;
+    font-weight: 800;
+    font-size: 16px;
+}
+#contrat_body ul.collapsible .row {
+    margin-bottom: 0 !important;
+}
+.collapsible-header i {
+    margin-right: 0 !important;
+    position: relative;
+    top: -2px;
+}
+
+input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:not(.browser-default), input.valid[type=text]:not(.browser-default):focus, input.valid[type=password]:not(.browser-default), input.valid[type=password]:not(.browser-default):focus, input.valid[type=email]:not(.browser-default), input.valid[type=email]:not(.browser-default):focus, input.valid[type=url]:not(.browser-default), input.valid[type=url]:not(.browser-default):focus, input.valid[type=time]:not(.browser-default), input.valid[type=time]:not(.browser-default):focus, input.valid[type=date]:not(.browser-default), input.valid[type=date]:not(.browser-default):focus, input.valid[type=datetime]:not(.browser-default), input.valid[type=datetime]:not(.browser-default):focus, input.valid[type=datetime-local]:not(.browser-default), input.valid[type=datetime-local]:not(.browser-default):focus, input.valid[type=tel]:not(.browser-default), input.valid[type=tel]:not(.browser-default):focus, input.valid[type=number]:not(.browser-default), input.valid[type=number]:not(.browser-default):focus, input.valid[type=search]:not(.browser-default), input.valid[type=search]:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+    border-bottom: 1px solid #001530 !important;
+    -webkit-box-shadow: 0 1px 0 0 #001530 !important;
+    box-shadow: 0 1px 0 0 #001530 !important;
+} 
