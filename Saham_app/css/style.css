@@ -96,8 +96,8 @@ input,select{
     color: #fff !important;
 }
 span::before{
-    border-right: 2px solid indigo !important;
-    border-bottom: 2px solid  indigo !important;
+    border-right: 2px solid  #06273a !important;
+    border-bottom: 2px solid  #06273a  !important;
 }
 
 .b1{
@@ -401,3 +401,11 @@ input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:n
     -webkit-box-shadow: 0 1px 0 0 #001530 !important;
     box-shadow: 0 1px 0 0 #001530 !important;
 } 
+.validators{
+    padding-top: 52px;
+
+}
+.conducteur{
+    padding-top: 55px;
+
+}

@@ -4,6 +4,7 @@
       var url_split = url.split('/')
       var assertion = true
       var tabValu    = [];
+      var checked=false
 
       inter_fr = {
         cancel: 'Annuler',
@@ -65,8 +66,8 @@
     };
 
 
-      var options = {
-        i18n: inter_fr,
+    var options = {
+      i18n: inter_fr,
     };
     var elem = document.querySelector('.datepicker');
     var instance = M.Datepicker.init(elem, options);
@@ -138,8 +139,8 @@
         $("#v_a_neuf").val(sessionStorage.getItem("valeurAneuf"))
         $("#puissace").val(sessionStorage.getItem("puissanceFiscale"))
         $("#d_mise_en_circulation").val(sessionStorage.getItem("date"))
-
       }
+  
       
       })
      
@@ -159,9 +160,9 @@
     var dateEffet    = new Date(date_choisie)
 
     var dateSimple = new Date();
-    var minutes = dateSimple.getMinutes();
-    var hour = dateSimple.getHours();
-    var hour = dateSimple.getDay();
+    // var minutes = dateSimple.getMinutes();
+    // var hour = dateSimple.getHours();
+    // var hour = dateSimple.getDay();
 
     curentYear = dateSimple.getFullYear();
     console.log(curentYear, dateEffet.getFullYear());
@@ -171,7 +172,7 @@
       alert('La date choisie est invalide.');
     }else {
       $('#date_echance').fadeIn();
-      $("#date_echance").text("Votre contrat prend fin le : "+parseInt(dateEffet.getDate() - 1)+"/"+parseInt(dateEffet.getMonth()+1)+"/"+parseInt(dateEffet.getFullYear()+1)+" à " + hour + "H " + minutes + "min")
+      $("#date_echance").text("Votre contrat prend fin le : "+parseInt(dateEffet.getDate() - 1)+"/"+parseInt(dateEffet.getMonth()+1)+"/"+parseInt(dateEffet.getFullYear()+1)+" à 23H 59min")
     }
     
 

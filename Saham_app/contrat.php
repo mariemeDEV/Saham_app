@@ -22,26 +22,23 @@
         <li class="active">
           <div class="collapsible-header"><i class="material-icons plus">add_circle</i>Assuré</div>
           <div class="collapsible-body">
-          <table class="highlight" id="data_table">
-                <thead>
-                  <tr>
-                      <th>Garantie</th>
-                      <th>Limitation</th>
-                      <th>Franchise</th>
-                      <th>Prime</th>
-                  </tr>
-                </thead>
-
-                <tbody class="data_appended"></tbody>
-              </table>
-          </div>
-        </li>
-
-        <li>
-          <div class="collapsible-header"><i class="material-icons plus">add_circle</i>Véhicule</div>
-          <div class="collapsible-body">
           <form method="POST" action="sendMail.php">
               <div class="row s12">
+                <div class="input-field col s4">
+                <label>
+                  <input type="checkbox" id="c1" checked />
+                  <span>Je suis le conducteur</span>
+                </label>
+                </div>
+                <div class="input-field col s4">
+                <label>
+                  <input type="checkbox" id="c2" />
+                  <span>Autre</span>
+                </label>
+                </div>
+              </div>
+
+              <div class="row s12 conducteur">
                 <div class="input-field col s4">
                   <input name="prenomNom" type="text" class="validate">
                   <label for="first_name">Prénom et Nom</label>
@@ -55,7 +52,14 @@
                   <label for="disabled">Numéro de téléphone</label>
                 </div>
               </div>
+            </form>
+          </div>
+        </li>
 
+        <li>
+          <div class="collapsible-header"><i class="material-icons plus">add_circle</i>Véhicule</div>
+          <div class="collapsible-body">
+          <form method="POST" action="sendMail.php">
               <div class="row s12">
                 <div class="input-field col s4">
                   <input id="v_declaree" type="text" class="validate" value="coco" disabled>
@@ -77,40 +81,51 @@
                   <label for="first_name">Date de mise en circulation</label>
                 </div>
                 <div class="input-field col s4">
-                  <input id="usage" type="text" value="" class="validate">
-                  <label for="last_name">Usage</label>
+                  <input type="text" class="validate">
+                  <label for="first_name">Usage</label>
                 </div>
                 <div class="input-field col s4">
                   <select>
-                    <option value="" disabled selected>Choisissez votre option</option>
-                    <option value="1">Genre 1</option>
-                    <option value="2">Genre 2</option>
-                    <option value="3">Genre 3</option>
+                    <option value="" disabled selected>marque de voiture</option>
+                    <option value="1">Ford</option>
+                    <option value="2">Fiat</option>
+                    <option value="3">Citroen</option>
+                    <option>Ranault</option>
+                    <option>autres</option>
                   </select>
-                  <label>Genre</label>
+                  <label>Marque</label>
                 </div>
               </div>
 
               <div class="row s12">
-                <div class="input-field col s4">
-                <select>
-                    <option value="" disabled selected>Choisissez votre option</option>
-                    <option value="1">Modéle 1</option>
-                    <option value="2">Modéle 2</option>
-                    <option value="3">Modéle 3</option>
-                  </select>
-                  <label>Modéle</label>
-                </div>
+              
                 <div class="input-field col s4">
                   <input id="immatriculation" type="text" value="" class="validate" placeholder="Ex : DK-8547-BH">
                   <label>Immatriculation</label>
                 </div>
               </div>
-              <div class="row">
-              <div class="col s2"><a class="waves-effect waves-light btn btn_submit" href="index.php">RETOUR</a></div>
-              <div class="col s10"><button class="waves-effect waves-light btn btn_submit" type="submit">OBTENIR UN CONTRAT</button></div>
-            </div>
             </form>
+          </div>
+        </li>
+
+         <li class="active">
+          <div class="collapsible-header"><i class="material-icons plus">add_circle</i>Garanties</div>
+          <div class="collapsible-body">
+          <table class="highlight" id="data_table">
+                <thead>
+                  <tr>
+                      <th>Garantie</th>
+                      <th>Limitation</th>
+                      <th>Franchise</th>
+                      <th>Prime</th>
+                  </tr>
+                </thead>
+                <tbody class="data_appended"></tbody>
+              </table>
+              <div class="row validators">
+                <div class="col s2"><a class="waves-effect waves-light btn btn_submit" href="index.php">RETOUR</a></div>
+                <div class="col s10"><button class="waves-effect waves-light btn btn_submit" type="submit">OBTENIR UN CONTRAT</button></div>
+              </div>
           </div>
         </li>
       </ul>
@@ -152,7 +167,6 @@
               </div>
 
               <div class="row s12" style="border:2px solid #f7ba00;padding:10px">Date d'échance  : <p id="date_echance" style="color:green;font-weight:bold"></p></div>
-
             </form>
               </div>
             </li>
