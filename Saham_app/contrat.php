@@ -23,24 +23,9 @@
           <div class="collapsible-header"><i class="material-icons plus">add_circle</i>Assuré</div>
           <div class="collapsible-body">
           <form method="POST" action="sendMail.php">
-              <div class="row s12">
+          <div class="row s12 conducteur">
                 <div class="input-field col s4">
-                <label>
-                  <input type="checkbox" id="c1" checked />
-                  <span>Je suis le conducteur</span>
-                </label>
-                </div>
-                <div class="input-field col s4">
-                <label>
-                  <input type="checkbox" id="c2" />
-                  <span>Autre</span>
-                </label>
-                </div>
-              </div>
-
-              <div class="row s12 conducteur">
-                <div class="input-field col s4">
-                  <input name="prenomNom" type="text" class="validate">
+                  <input name="prenomNom" id="prenomNom" type="text" class="validate">
                   <label for="first_name">Prénom et Nom</label>
                 </div>
                 <div class="input-field col s4">
@@ -52,6 +37,28 @@
                   <label for="disabled">Numéro de téléphone</label>
                 </div>
               </div>
+
+              <div class="row s12 who">
+                <div class="input-field col s5">
+                <label>
+                  <input class="with-gap" name="group1" type="radio" id="oui_conducteur" />
+                  <span>Nom du(de la) conducteur(trice)</span>
+                </label>
+                </div>
+                <div class="input-field col s2">
+                <label>
+                  <input class="with-gap" name="group1" type="radio" id="non_conducteur" />
+                  <span>Autre</span>
+                </label>
+                </div>
+                <div class="input-field col s5 conducteur_name">
+                  <input name="nom_conducteur" id="nomConducteur" type="text" class="validate" value="coco" placeholder="">
+                  <label>Nom du(de la) conducteur(trice)</label>
+                </div>
+              </div>
+
+             
+
             </form>
           </div>
         </li>
@@ -86,12 +93,18 @@
                 </div>
                 <div class="input-field col s4">
                   <select>
-                    <option value="" disabled selected>marque de voiture</option>
-                    <option value="1">Ford</option>
-                    <option value="2">Fiat</option>
-                    <option value="3">Citroen</option>
+                    <option disabled selected>marque de voiture</option>
+                    <option>BMW</option>
+                    <optioN>Citroën</option>
+                    <option>Citroen</option>
+                    <option>Ford</option>
+                    <option>Fiat</option>
+                    <option>Kya</option>
                     <option>Ranault</option>
-                    <option>autres</option>
+                    <option>SsangYong</option>
+                    <option>Toyota</option>
+                    <option>Autre</option>
+
                   </select>
                   <label>Marque</label>
                 </div>

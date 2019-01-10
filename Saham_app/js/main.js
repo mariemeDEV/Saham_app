@@ -69,7 +69,7 @@
     var options = {
       i18n: inter_fr,
     };
-    var elem = document.querySelector('.datepicker');
+    var elem     = document.querySelector('.datepicker');
     var instance = M.Datepicker.init(elem, options);
 
       $('.tooltipped').tooltip();
@@ -140,7 +140,21 @@
         $("#puissace").val(sessionStorage.getItem("puissanceFiscale"))
         $("#d_mise_en_circulation").val(sessionStorage.getItem("date"))
       }
-  
+      
+      $("#oui_conducteur").on("click",function(){
+        var nom_conducteur = $("#prenomNom").val();
+        $(".conducteur_name").css("display","inline-block")
+        if(nom_conducteur!=""){
+          $("#nomConducteur").val(nom_conducteur)
+        }else{
+          alert("Saisissez vos nom et prénom")
+          $(".conducteur_name").css("display","none")
+        }
+      })
+      $("#non_conducteur").on("click",function(){
+        $(".conducteur_name").css("display","inline-block")
+        $("#nomConducteur").val("Veuillez préciser le nom du(de la) conducteur(trice)")
+      })
       
       })
      

@@ -96,8 +96,10 @@ input,select{
     color: #fff !important;
 }
 span::before{
-    border-right: 2px solid  #06273a !important;
-    border-bottom: 2px solid  #06273a  !important;
+    border: 2px solid  #06273a !important;
+}
+span{
+    color: #06273a !important;
 }
 
 .b1{
@@ -405,7 +407,13 @@ input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:n
     padding-top: 52px;
 
 }
-.conducteur{
+/* .conducteur{
     padding-top: 55px;
 
+} */
+.conducteur_name{
+    display:none;
+}
+.who{
+    padding-bottom:15px
 }
